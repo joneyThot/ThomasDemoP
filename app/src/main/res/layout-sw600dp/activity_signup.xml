@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linMainRegister"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGray"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout1"
+        layout="@layout/header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLightGray">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@color/colorPrimary">
+
+                <FrameLayout
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/round_background">
+
+                    <com.rogi.View.CircularImageView
+                        android:id="@+id/circularImageView"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:background="@mipmap/profile_logo" />
+
+                    <LinearLayout
+                        android:id="@+id/linImagBtn"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center|bottom"
+                        android:layout_marginLeft="40dp"
+                        android:background="@drawable/round_background">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center|center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:src="@mipmap/profile_change_icon" />
+
+                    </LinearLayout>
+
+
+                </FrameLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/signup_form"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="200dp">
+
+                <include
+                    android:id="@+id/mInclude_Layout"
+                    layout="@layout/activity_signup_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp" />
+
+            </RelativeLayout>
+
+            <com.rogi.View.TextViewPlus
+                android:id="@+id/signUpBTN"
+                style="@style/BtnStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/signup_form"
+                android:layout_margin="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Create an Account"
+                app:customFont="@string/font_regular" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/signUpBTN"
+                android:layout_margin="20dp"
+                android:gravity="center_horizontal|bottom"
+                android:orientation="horizontal">
+
+                <com.rogi.View.TextViewPlus
+                    style="@style/fontStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Already have an account?"
+                    android:textColor="@color/txt1Color"
+                    android:textSize="@dimen/xxxxfontSize"
+                    app:customFont="@string/font_regular" />
+
+                <com.rogi.View.TextViewPlus
+                    android:id="@+id/signInText"
+                    style="@style/fontStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="  Sign In"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/xxxxfontSize"
+                    app:customFont="@string/font_regular" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+
+

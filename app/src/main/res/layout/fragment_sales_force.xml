@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGray"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:id="@+id/linDefault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/profile_logo" />
+
+        <com.rogi.View.TextViewPlus
+            android:id="@+id/txtError"
+            style="@style/fontStyle"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="For Salesforce Task sync up, upgrade to ROGi enterprise\n\n To upgrade plan go to profile > Upgrade plan."
+            android:textColor="@color/text2Color"
+            android:textSize="@dimen/btnFontSize"
+            app:customFont="@string/font_regular" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/sv1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLightGray">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_shadow"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_5">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:theme="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/edtConsumerKey"
+                        style="@style/EditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:drawableLeft="@mipmap/key"
+                        android:drawablePadding="@dimen/margin_5"
+                        android:hint="Consumer Key"
+                        android:inputType="text" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/edtConsumerSecretKey"
+                        style="@style/EditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/key"
+                        android:drawablePadding="@dimen/margin_5"
+                        android:hint="Consumer Secret Key"
+                        android:inputType="text" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:theme="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/edtSecurityToken"
+                        style="@style/EditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:drawableLeft="@mipmap/key"
+                        android:drawablePadding="@dimen/margin_5"
+                        android:hint="Security Token"
+                        android:inputType="text" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:theme="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/edtUsername"
+                        style="@style/EditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:drawableLeft="@mipmap/user"
+                        android:drawablePadding="@dimen/margin_5"
+                        android:hint="Email Address / User name"
+                        android:inputType="text" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:theme="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/edtPassword"
+                        style="@style/EditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:drawableLeft="@mipmap/lock"
+                        android:drawablePadding="@dimen/margin_5"
+                        android:hint="Password"
+                        android:inputType="textPassword" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+
+            <com.rogi.View.TextViewPlus
+                android:id="@+id/btnSalesForce"
+                style="@style/BtnStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_20"
+                android:layout_marginTop="@dimen/margin_20"
+                android:gravity="center"
+                android:text="salesforce"
+                app:customFont="@string/font_regular" />
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

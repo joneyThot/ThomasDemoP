@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGray"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/margin_10"
+        android:orientation="vertical">
+
+        <com.rogi.View.TextViewPlus
+            android:id="@+id/btnSFConfig"
+            style="@style/BtnStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:gravity="center"
+            android:text="Salesforce Configuration"
+            android:textSize="@dimen/FontSize15"
+            app:customFont="@string/font_regular" />
+
+        <com.rogi.View.TextViewPlus
+            android:id="@+id/btnSFSyn"
+            style="@style/BtnStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:gravity="center"
+            android:text="Salesforce Synchronize"
+            android:textSize="@dimen/FontSize15"
+            app:customFont="@string/font_regular" />
+
+        <com.rogi.View.TextViewPlus
+            android:id="@+id/btnAppWalk"
+            style="@style/BtnStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:gravity="center"
+            android:text="App Walkthrough"
+            android:textSize="@dimen/FontSize15"
+            app:customFont="@string/font_regular" />
+
+        <com.rogi.View.TextViewPlus
+            android:id="@+id/btnAppSF"
+            style="@style/BtnStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:gravity="center"
+            android:text="App Salesforce Synchronize"
+            android:textSize="@dimen/FontSize15"
+            app:customFont="@string/font_regular" />
+
+        <com.rogi.View.TextViewPlus
+            android:id="@+id/btnCreateSubUser"
+            style="@style/BtnStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:gravity="center"
+            android:text="Manage sub users"
+            android:textSize="@dimen/FontSize15"
+            app:customFont="@string/font_regular" />
+    </LinearLayout>
+
+</RelativeLayout>

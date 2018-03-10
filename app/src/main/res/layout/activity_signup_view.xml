@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_shadow"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txtInputCompanyName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:theme="@style/TextLabel">
+
+        <EditText
+            android:id="@+id/edtCompanyName"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@mipmap/user"
+            android:drawablePadding="@dimen/margin_5"
+            android:hint="Company Name"
+            android:inputType="textCapSentences" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:theme="@style/TextLabel">
+
+        <EditText
+            android:id="@+id/edtFirstName"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@mipmap/user"
+            android:drawablePadding="@dimen/margin_5"
+            android:hint="First Name"
+            android:inputType="textCapSentences" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:theme="@style/TextLabel">
+
+        <EditText
+            android:id="@+id/edtLastName"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@mipmap/user"
+            android:drawablePadding="@dimen/margin_5"
+            android:hint="Last Name"
+            android:inputType="textCapSentences" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:theme="@style/TextLabel">
+
+        <EditText
+            android:id="@+id/edtEmailAddress"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@mipmap/email_icon"
+            android:drawablePadding="@dimen/margin_5"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:theme="@style/TextLabel">
+
+        <EditText
+            android:id="@+id/edtPhoneNumber"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@mipmap/call_icon"
+            android:drawablePadding="@dimen/margin_5"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:maxLength="14" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <FrameLayout
+        android:id="@+id/framePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/edtPasswordRegister"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@mipmap/lock"
+                android:drawablePadding="@dimen/margin_5"
+                android:hint="Password"
+                android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/imgShowPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/margin_5"
+            android:layout_marginTop="@dimen/margin_15"
+            android:padding="@dimen/margin_10"
+            android:src="@mipmap/eye" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameCPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/edtConfirmPasswordRegister"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@mipmap/lock"
+                android:drawablePadding="@dimen/margin_5"
+                android:hint="Confirm Password"
+                android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/imgShowCPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/margin_5"
+            android:layout_marginTop="@dimen/margin_15"
+            android:padding="@dimen/margin_10"
+            android:src="@mipmap/eye" />
+
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_shadow"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp">
+
+        <com.rogi.View.TextViewPlus
+            android:id="@+id/noteTime"
+            style="@style/fontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="June 08 2017, 12:30AM"
+            android:textColor="@color/notesDateTimeColor"
+            android:textSize="@dimen/FontSize"
+            app:customFont="@string/font_regular" />
+
+    </LinearLayout>
+
+
+    <com.daimajia.swipe.SwipeLayout
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/bottom_wrapper"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/editNoteBTN"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:src="@mipmap/edit_icon" />
+
+            <ImageView
+                android:id="@+id/deleteNoteBTN"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:src="@mipmap/delete_icon" />
+
+        </LinearLayout>
+
+        <com.rogi.View.TextViewPlus
+            android:id="@+id/noteText"
+            style="@style/fontStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorLightGray"
+            android:padding="5dp"
+            android:text="@string/shortDummyText"
+            android:textColor="@color/text2Color"
+            android:textSize="@dimen/xxFontSize"
+            app:customFont="@string/font_regular" />
+
+    </com.daimajia.swipe.SwipeLayout>
+
+</LinearLayout>

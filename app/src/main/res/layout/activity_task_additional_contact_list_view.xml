@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_shadow"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorLightGray"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal">
+
+                <com.rogi.View.TextViewPlus
+                    style="@style/fontStyle"
+                    android:layout_width="@dimen/dp100"
+                    android:layout_height="wrap_content"
+                    android:text="@string/additnal_name"
+                    android:textColor="@color/text2Color"
+                    android:textSize="@dimen/xxFontSize"
+                    app:customFont="@string/font_regular" />
+
+                <com.rogi.View.TextViewPlus
+                    android:id="@+id/adtnlCustomerNameText"
+                    style="@style/fontStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/txtColor"
+                    android:textSize="@dimen/xxFontSize"
+                    app:customFont="@string/font_regular" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal">
+
+                <com.rogi.View.TextViewPlus
+                    style="@style/fontStyle"
+                    android:layout_width="@dimen/dp100"
+                    android:layout_height="wrap_content"
+                    android:text="@string/additnal_company"
+                    android:textColor="@color/text2Color"
+                    android:textSize="@dimen/xxFontSize"
+                    app:customFont="@string/font_regular" />
+
+                <com.rogi.View.TextViewPlus
+                    android:id="@+id/adtnlCompanyNameText"
+                    style="@style/fontStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/txtColor"
+                    android:textSize="@dimen/xxFontSize"
+                    app:customFont="@string/font_regular" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal">
+
+                <com.rogi.View.TextViewPlus
+                    style="@style/fontStyle"
+                    android:layout_width="@dimen/dp100"
+                    android:layout_height="wrap_content"
+                    android:text="@string/additnal_address"
+                    android:textColor="@color/text2Color"
+                    android:textSize="@dimen/xxFontSize"
+                    app:customFont="@string/font_regular" />
+
+                <com.rogi.View.TextViewPlus
+                    android:id="@+id/adtnlAddressText"
+                    style="@style/fontStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/txtColor"
+                    android:textSize="@dimen/xxFontSize"
+                    app:customFont="@string/font_regular" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal">
+
+                <com.rogi.View.TextViewPlus
+                    style="@style/fontStyle"
+                    android:layout_width="@dimen/dp100"
+                    android:layout_height="wrap_content"
+                    android:text="@string/additnal_phone"
+                    android:textColor="@color/text2Color"
+                    android:textSize="@dimen/xxFontSize"
+                    app:customFont="@string/font_regular" />
+
+                <com.rogi.View.TextViewPlus
+                    android:id="@+id/adtnlPhoneText"
+                    style="@style/fontStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/txtColor"
+                    android:textSize="@dimen/xxFontSize"
+                    app:customFont="@string/font_regular" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal">
+
+                <com.rogi.View.TextViewPlus
+                    style="@style/fontStyle"
+                    android:layout_width="@dimen/dp100"
+                    android:layout_height="wrap_content"
+                    android:text="@string/additnal_email"
+                    android:textColor="@color/text2Color"
+                    android:textSize="@dimen/xxFontSize"
+                    app:customFont="@string/font_regular" />
+
+                <com.rogi.View.TextViewPlus
+                    android:id="@+id/adtnlEmailText"
+                    style="@style/fontStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/txtColor"
+                    android:textSize="@dimen/xxFontSize"
+                    app:customFont="@string/font_regular" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal">
+
+                <com.rogi.View.TextViewPlus
+                    style="@style/fontStyle"
+                    android:layout_width="@dimen/dp100"
+                    android:layout_height="wrap_content"
+                    android:text="@string/additnal_responsibility"
+                    android:textColor="@color/text2Color"
+                    android:textSize="@dimen/xxFontSize"
+                    app:customFont="@string/font_regular" />
+
+                <com.rogi.View.TextViewPlus
+                    android:id="@+id/adtnlResponsibilityText"
+                    style="@style/fontStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/txtColor"
+                    android:textSize="@dimen/xxFontSize"
+                    app:customFont="@string/font_regular" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+
+        <ImageView
+            android:id="@+id/editAdtnlCustomerBTN"
+            android:layout_width="@dimen/btn_delete_update"
+            android:layout_height="@dimen/btn_delete_update"
+            android:layout_marginRight="5dp"
+            android:src="@mipmap/edit_icon" />
+
+        <ImageView
+            android:id="@+id/deleteAdtnlCustomerBTN"
+            android:layout_width="@dimen/btn_delete_update"
+            android:layout_height="@dimen/btn_delete_update"
+            android:src="@mipmap/delete_icon" />
+    </LinearLayout>
+</RelativeLayout>

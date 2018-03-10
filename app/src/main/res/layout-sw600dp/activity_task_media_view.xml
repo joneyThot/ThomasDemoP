@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGray"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout1"
+        layout="@layout/header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_10">
+
+            <FrameLayout
+                android:id="@+id/frmLayout"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:background="@drawable/background_shadow">
+
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/NetworkImgCamera"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@mipmap/default_image"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/imgOffline"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@mipmap/default_image"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:id="@+id/linAudioline"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgAudioline"
+                        android:layout_width="270dp"
+                        android:layout_height="270dp"
+                        android:background="@mipmap/audiotrack"
+                        android:scaleType="fitXY" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/editImageLayout"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="top|right"
+                    android:layout_margin="5dp"
+                    android:background="@color/colorLightGray"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/deleteImgview"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center|center_vertical|center_horizontal"
+                        android:background="@mipmap/edit_img" />
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imgVideo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/video" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <com.rogi.View.TextViewPlus
+                    android:id="@+id/txtDate"
+                    style="@style/fontStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/priorityBTN"
+                    android:drawableLeft="@mipmap/calendar_icon"
+                    android:drawablePadding="3dp"
+                    android:text="Jun 08 2017"
+                    android:textColor="@color/txtColor"
+                    android:textSize="@dimen/xxFontSize"
+                    app:customFont="@string/font_regular" />
+
+                <com.rogi.View.TextViewPlus
+                    android:id="@+id/txtTime"
+                    style="@style/fontStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/time"
+                    android:drawablePadding="3dp"
+                    android:gravity="right"
+                    android:text="11:30AM"
+                    android:textColor="@color/txtColor"
+                    android:textSize="@dimen/xxFontSize"
+                    app:customFont="@string/font_regular" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_shadow"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:orientation="horizontal">
+
+                    <com.rogi.View.TextViewPlus
+                        style="@style/fontStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Description"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/xxFontSize"
+                        app:customFont="@string/font_regular" />
+
+                    <ImageView
+                        android:id="@+id/imgMediaDes"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@mipmap/edit_img" />
+
+                </RelativeLayout>
+
+                <com.rogi.View.TextViewPlus
+                    android:id="@+id/txtDescription"
+                    style="@style/fontStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@color/text2Color"
+                    android:textSize="@dimen/xxxFontSize"
+                    app:customFont="@string/font_regular" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_shadow"
+                android:orientation="vertical">
+
+                <com.rogi.View.TextViewPlus
+                    style="@style/fontStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Address"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/xxFontSize"
+                    app:customFont="@string/font_regular" />
+
+                <com.rogi.View.TextViewPlus
+                    android:id="@+id/txtAddress"
+                    style="@style/fontStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:text="2461 Trace Rd, Spring Valley, CA 91978"
+                    android:textColor="@color/text2Color"
+                    android:textSize="@dimen/xxxFontSize"
+                    app:customFont="@string/font_regular" />
+
+                <fragment
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.MapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

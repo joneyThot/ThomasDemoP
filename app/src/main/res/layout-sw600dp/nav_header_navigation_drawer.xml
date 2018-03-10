@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <LinearLayout
+        android:id="@+id/menuLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgProjectLogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            android:src="@mipmap/title_img" />
+
+        <LinearLayout
+            android:id="@+id/profileLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.rogi.View.CircularImageView
+                android:id="@+id/cirProfileImage"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@mipmap/profile_logo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <com.rogi.View.TextViewPlus
+                    android:id="@+id/txtUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/colorUserName"
+                    android:textSize="@dimen/titleFontSize"
+                    android:textStyle="bold"
+                    app:customFont="@string/font_regular" />
+
+                <com.rogi.View.TextViewPlus
+                    android:id="@+id/txtEmailId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/edthintTextColor"
+                    android:textSize="@dimen/xFontSize"
+                    app:customFont="@string/font_regular" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu_linHome"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_20"
+            android:orientation="vertical">
+
+            <com.rogi.View.TextViewPlus
+                android:id="@+id/txtHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:singleLine="true"
+                android:text="@string/nav_home"
+                android:textColor="@color/txtColor"
+                android:textSize="@dimen/normalFontSize"
+                app:customFont="@string/font_regular" />
+
+            <View
+                android:id="@+id/viewHome"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/txtColor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu_linHistroy"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_5"
+            android:orientation="vertical">
+
+            <com.rogi.View.TextViewPlus
+                android:id="@+id/txtHistroy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:singleLine="true"
+                android:text="@string/nav_history"
+                android:textColor="@color/txtColor"
+                android:textSize="@dimen/normalFontSize"
+                app:customFont="@string/font_regular" />
+
+            <View
+                android:id="@+id/viewHistroy"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/txtColor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu_linSalesForce"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_5"
+            android:orientation="vertical">
+
+            <com.rogi.View.TextViewPlus
+                android:id="@+id/txtSalesForce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:singleLine="true"
+                android:text="@string/nav_sales_force"
+                android:textColor="@color/txtColor"
+                android:textSize="@dimen/normalFontSize"
+                app:customFont="@string/font_regular" />
+
+            <View
+                android:id="@+id/viewSalesForce"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/txtColor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu_linPurchaseUser"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_5"
+            android:orientation="vertical">
+
+            <com.rogi.View.TextViewPlus
+                android:id="@+id/txtPurchaseUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:singleLine="true"
+                android:text="@string/nav_purchase_user"
+                android:textColor="@color/txtColor"
+                android:textSize="@dimen/normalFontSize"
+                app:customFont="@string/font_regular" />
+
+            <View
+                android:id="@+id/viewPurchaseUser"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/txtColor" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/menu_linTechnicalSupport"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_5"
+            android:orientation="vertical">
+
+            <com.rogi.View.TextViewPlus
+                android:id="@+id/txtTechnicalSupport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:singleLine="true"
+                android:text="@string/nav_technical_support"
+                android:textColor="@color/txtColor"
+                android:textSize="@dimen/normalFontSize"
+                app:customFont="@string/font_regular" />
+
+            <View
+                android:id="@+id/viewTechnicalSupport"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/txtColor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu_linVideoGuide"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_5"
+            android:orientation="vertical">
+
+            <com.rogi.View.TextViewPlus
+                android:id="@+id/txtVideoGuide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:singleLine="true"
+                android:text="@string/nav_video_guide"
+                android:textColor="@color/txtColor"
+                android:textSize="@dimen/normalFontSize"
+                app:customFont="@string/font_regular" />
+
+            <View
+                android:id="@+id/viewVideoGuide"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/txtColor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu_linFAQ"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_10"
+            android:orientation="vertical">
+
+            <com.rogi.View.TextViewPlus
+                android:id="@+id/txtFAQ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:singleLine="true"
+                android:text="@string/nav_faq"
+                android:textColor="@color/txtColor"
+                android:textSize="@dimen/normalFontSize"
+                app:customFont="@string/font_regular" />
+
+            <View
+                android:id="@+id/viewFAQ"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/txtColor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu_linAbout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_5"
+            android:orientation="vertical">
+
+            <com.rogi.View.TextViewPlus
+                android:id="@+id/txtAbout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:singleLine="true"
+                android:text="@string/nav_about"
+                android:textColor="@color/txtColor"
+                android:textSize="@dimen/normalFontSize"
+                app:customFont="@string/font_regular" />
+
+            <View
+                android:id="@+id/viewAbout"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/txtColor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu_linPrivacyPolicy"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_5"
+            android:orientation="vertical">
+
+            <com.rogi.View.TextViewPlus
+                android:id="@+id/txtPrivacyPolicy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:singleLine="true"
+                android:text="@string/nav_privacy_policy"
+                android:textColor="@color/txtColor"
+                android:textSize="@dimen/normalFontSize"
+                app:customFont="@string/font_regular" />
+
+            <View
+                android:id="@+id/viewPrivacyPolicy"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/txtColor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu_linTermsAndCondtion"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_5"
+            android:orientation="vertical">
+
+            <com.rogi.View.TextViewPlus
+                android:id="@+id/txtTermsAndCondtion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:singleLine="true"
+                android:text="@string/nav_terms_and_condition"
+                android:textColor="@color/txtColor"
+                android:textSize="@dimen/normalFontSize"
+                app:customFont="@string/font_regular" />
+
+            <View
+                android:id="@+id/viewTermsAndCondtion"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/txtColor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu_linLogout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_5"
+            android:orientation="vertical">
+
+            <com.rogi.View.TextViewPlus
+                android:id="@+id/txtLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:singleLine="true"
+                android:text="@string/nav_logout"
+                android:textColor="@color/txtColor"
+                android:textSize="@dimen/normalFontSize"
+                app:customFont="@string/font_regular" />
+
+            <View
+                android:id="@+id/viewLogout"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/txtColor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu_linRogiUrl"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_10"
+            android:orientation="vertical">
+
+            <com.rogi.View.TextViewPlus
+                android:id="@+id/txtRogiUrl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/txtColor"
+                android:textColorLink="@color/urlColor"
+                android:textSize="@dimen/xxxFontSize"
+                app:customFont="@string/font_regular" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

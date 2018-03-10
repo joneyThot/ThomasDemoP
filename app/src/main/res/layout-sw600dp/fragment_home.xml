@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGray">
+
+    <LinearLayout
+        android:id="@+id/linDefault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/profile_logo" />
+
+        <com.rogi.View.TextViewPlus
+            android:id="@+id/txtError"
+            style="@style/fontStyle"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="@string/no_project"
+            android:textColor="@color/text2Color"
+            android:textSize="@dimen/titleFontSize"
+            app:customFont="@string/font_regular" />
+
+        <com.rogi.View.TextViewPlus
+            android:id="@+id/txtMsg"
+            style="@style/fontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="@string/no_project_msg"
+            android:textColor="@color/edthintTextColor"
+            android:textSize="@dimen/xxxxfontSize"
+            app:customFont="@string/font_regular" />
+
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_project"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linBottom">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_10"
+            android:scrollbars="none" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/linBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <com.rogi.View.TextViewPlus
+            android:id="@+id/txtRogiUrl"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:textColorLink="@color/urlColor"
+            android:textSize="@dimen/btnFontSize"
+            app:customFont="@string/font_regular" />
+
+        <com.rogi.View.TextViewPlus
+            android:id="@+id/btnClearFilter"
+            style="@style/BtnStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="@string/histroy_clear_filter"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            app:customFont="@string/font_regular" />
+    </LinearLayout>
+
+
+</RelativeLayout>

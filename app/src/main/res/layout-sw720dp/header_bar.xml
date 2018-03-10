@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/title_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginLeft="-12dp"
+            android:background="@color/colorWhite"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.rogi.View.TextViewPlus
+                    android:id="@+id/titleText"
+                    style="@style/fontStyle"
+                    android:layout_width="350dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="My Profile"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_25"
+                    app:customFont="@string/font_regular" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/backLayoutclick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/margin_10">
+
+                        <ImageView
+                            android:id="@+id/back"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@mipmap/back" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/shareProfileView"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_marginRight="10dp"
+                        android:background="@mipmap/share_icon"
+                        android:padding="5dp"
+                        android:textSize="12dp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/editProfileView"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_marginRight="10dp"
+                        android:background="@mipmap/edit_header"
+                        android:padding="5dp"
+                        android:textSize="12dp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/saveProfileView"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_marginRight="10dp"
+                        android:background="@mipmap/right"
+                        android:padding="5dp"
+                        android:textSize="12dp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/addProfileView"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_marginRight="10dp"
+                        android:background="@mipmap/plush_icon"
+                        android:padding="5dp"
+                        android:textSize="12dp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+</RelativeLayout>

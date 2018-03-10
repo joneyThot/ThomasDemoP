@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "842971774321",
+    "firebase_url": "https://rogi-191913.firebaseio.com",
+    "project_id": "rogi-191913",
+    "storage_bucket": "rogi-191913.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:842971774321:android:27d6e946aed7d4dd",
+        "android_client_info": {
+          "package_name": "com.rogi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "842971774321-4ibdimh42r9soq1vshh0su6kv2crr5fs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rogi",
+            "certificate_hash": "fd1876b57d50878be61a187718cd0cf7b6b541f1"
+          }
+        },
+        {
+          "client_id": "842971774321-ot8i58hmvcva7itud0khoba6r6nj72gd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rogi",
+            "certificate_hash": "2588f09f5d9b81198dba75e7052fb28b4a8e91d2"
+          }
+        },
+        {
+          "client_id": "842971774321-dd3fv0d9cq9q6lp5mtf2m5fa2stdcpcq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpnb7aKwt44uTVG15jrqDwYg8e_fFzVTM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "842971774321-dd3fv0d9cq9q6lp5mtf2m5fa2stdcpcq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

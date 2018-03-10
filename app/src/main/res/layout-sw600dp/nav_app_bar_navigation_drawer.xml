@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.rogi.Activity.NavigationDrawerActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorWhite"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <!--<FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/titleText"
+                    style="@style/fontStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ellipsize="end"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/titleFontSize" />
+
+                <ImageView
+                    android:id="@+id/imgLogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@mipmap/logo_header"
+                    android:visibility="visible" />
+
+
+                <ImageView
+                    android:id="@+id/imgSyc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="35dp"
+                    android:background="@mipmap/refresh"
+                    android:padding="12dp"
+                    android:textSize="12dp"
+                    android:visibility="visible" />
+
+
+                <ImageView
+                    android:id="@+id/filterView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="10dp"
+                    android:background="@mipmap/filter"
+                    android:padding="10dp"
+                    android:textSize="12dp"
+                    android:visibility="visible" />
+
+            </FrameLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal">
+
+                    <com.rogi.View.TextViewPlus
+                        android:id="@+id/titleText"
+                        style="@style/fontStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLength="20"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_size_25"
+                        android:visibility="gone"
+                        app:customFont="@string/font_regular" />
+
+                    <ImageView
+                        android:id="@+id/imgLogo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@mipmap/logo_header"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imgSyc"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:background="@mipmap/refresh"
+                    android:gravity="right"
+                    android:padding="@dimen/margin_13"
+                    android:visibility="visible" />
+
+
+                <ImageView
+                    android:id="@+id/filterView"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:background="@mipmap/filter"
+                    android:gravity="right"
+                    android:padding="@dimen/margin_13"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/nav_content_navigation_drawer" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@mipmap/add_new_projects"
+        app:backgroundTint="@color/colorGreen" />
+
+
+</android.support.design.widget.CoordinatorLayout>

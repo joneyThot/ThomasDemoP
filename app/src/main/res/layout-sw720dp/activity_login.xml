@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linMainLogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="180dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <com.rogi.View.TextViewPlus
+        android:id="@+id/txtRogiUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColorLink="@color/urlColor"
+        android:textSize="@dimen/xxxxfontSize"
+        app:customFont="@string/font_regular" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/background_shadow"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtInputUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:theme="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/edtUsername"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/user"
+                android:drawablePadding="@dimen/margin_5"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress" />
+        </android.support.design.widget.TextInputLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtInputPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel">
+
+                <EditText
+                    android:id="@+id/edtPasswordLogin"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/lock"
+                    android:drawablePadding="@dimen/margin_20"
+                    android:hint="Password"
+                    android:inputType="textPassword" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/imgShowPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/margin_15"
+                android:padding="@dimen/margin_10"
+                android:src="@mipmap/eye" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <com.rogi.View.TextViewPlus
+        android:id="@+id/forgotPasswordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Forgot Password?"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/xxxxfontSize"
+        app:customFont="@string/font_regular" />
+
+    <com.rogi.View.TextViewPlus
+        android:id="@+id/signInBTN"
+        style="@style/BtnStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Sign In"
+        app:customFont="@string/font_regular" />
+
+    <com.rogi.View.TextViewPlus
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_20"
+        android:layout_marginTop="@dimen/margin_15"
+        android:gravity="center"
+        android:padding="@dimen/margin_5"
+        android:text="OR"
+        android:textColor="@color/txtColor"
+        android:textSize="@dimen/xxxxfontSize"
+        android:visibility="invisible"
+        app:customFont="@string/font_regular" />
+
+    <ImageButton
+        android:id="@+id/salesForceLoginView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/salesforce_logo"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.rogi.View.TextViewPlus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Don't have an account?"
+            android:textColor="@color/txt1Color"
+            android:textSize="@dimen/xxxxfontSize"
+            app:customFont="@string/font_regular" />
+
+
+        <com.rogi.View.TextViewPlus
+            android:id="@+id/signupText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="Sign Up"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/xxxxfontSize"
+            app:customFont="@string/font_regular" />
+    </LinearLayout>
+
+
+</LinearLayout>

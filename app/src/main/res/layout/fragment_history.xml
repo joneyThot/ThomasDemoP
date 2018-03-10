@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGray">
+
+    <LinearLayout
+        android:id="@+id/linDefault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/profile_logo" />
+
+        <com.rogi.View.TextViewPlus
+            android:id="@+id/txtError"
+            style="@style/fontStyle"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="@string/no_histroy_projects"
+            android:textColor="@color/text2Color"
+            android:textSize="@dimen/titleFontSize"
+            app:customFont="@string/font_regular" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linDetails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnClearFilter"
+        android:background="@color/colorLightGray"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_10">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh_histroy"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ListView
+                android:id="@+id/lisHistroy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="10dp"
+                android:scrollbars="none"></ListView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+
+    <com.rogi.View.TextViewPlus
+        android:id="@+id/btnClearFilter"
+        style="@style/BtnStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="@string/histroy_clear_filter"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        app:customFont="@string/font_regular" />
+
+
+</RelativeLayout>

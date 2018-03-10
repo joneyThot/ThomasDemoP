@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainPaymentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGray"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout1"
+        layout="@layout/header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <ScrollView
+        android:id="@+id/sv1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout1"
+        android:paddingBottom="100dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/sv1"
+            android:layout_margin="@dimen/margin_10"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorWhite"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+
+                <com.rogi.View.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Card Number"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/btnFontSize"
+                    app:customFont="@string/font_regular" />
+
+
+                <EditText
+                    android:id="@+id/card_number_view"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/margin_5"
+                    android:hint="Enter Card Number"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="19" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.rogi.View.TextViewPlus
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="Expiration Date"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/btnFontSize"
+                            app:customFont="@string/font_regular" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/date_month_view"
+                                style="@style/EditTextStyle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:drawablePadding="@dimen/margin_5"
+                                android:focusable="false"
+                                android:hint="Month"
+                                android:imeOptions="actionNext"
+                                android:inputType="number"
+                                android:maxLength="2" />
+
+                            <EditText
+                                android:id="@+id/date_year_view"
+                                style="@style/EditTextStyle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:drawablePadding="@dimen/margin_5"
+                                android:editable="false"
+                                android:focusable="false"
+                                android:hint="Year"
+                                android:imeOptions="actionNext"
+                                android:inputType="number"
+
+                                android:maxLength="4" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.rogi.View.TextViewPlus
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="Security Code"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/btnFontSize"
+                            app:customFont="@string/font_regular" />
+
+                        <EditText
+                            android:id="@+id/security_code_view"
+                            style="@style/EditTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="@dimen/margin_5"
+                            android:hint="CVV"
+                            android:imeOptions="actionDone"
+                            android:inputType="number"
+                            android:maxLength="3" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.rogi.View.TextViewPlus
+                android:id="@+id/txtAuthorizeDes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout2"
+                android:layout_margin="@dimen/margin_10"
+                android:gravity="center"
+                android:padding="@dimen/margin_5"
+                android:text=""
+                android:textColor="@color/txtColor"
+                android:textSize="@dimen/FontSize15"
+                app:customFont="@string/font_regular" />
+
+
+            <CheckBox
+                android:id="@+id/checkSubscription"
+                style="@style/fontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/layout2"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:buttonTint="@color/colorGreen"
+                android:padding="@dimen/margin_5"
+                android:text="Auto Renew Subscription"
+                android:textColor="@color/txtColor"
+                android:textSize="@dimen/FontSize15"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.rogi.View.TextViewPlus
+        android:id="@+id/button_checkout_order"
+        style="@style/BtnStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_10"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:imeOptions="actionDone"
+        android:text="Pay Now"
+        app:customFont="@string/font_regular" />
+
+</RelativeLayout>

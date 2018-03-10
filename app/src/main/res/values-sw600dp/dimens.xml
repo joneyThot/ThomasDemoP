@@ -1,0 +1,55 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">20dp</dimen>
+    <dimen name="nav_header_height">200dp</dimen>
+    <dimen name="fab_margin">30dp</dimen>
+
+    <dimen name="progressBarWidth">7dp</dimen>
+
+
+    <!--TODO: Font size ::::-->
+    <dimen name="text_size_25">30dp</dimen>
+    <dimen name="titleFontSize">25.00dp</dimen>
+    <dimen name="btnFontSize">21.25dp</dimen>
+    <dimen name="FontSize15">20dp</dimen>
+    <dimen name="normalFontSize">18.75dp</dimen>
+    <dimen name="xxxxfontSize">17.50dp</dimen>
+    <dimen name="xxxFontSize">16.25dp</dimen>
+    <dimen name="xxFontSize">15.00dp</dimen>
+    <dimen name="xFontSize">14.00dp</dimen>
+    <dimen name="FontSize">12.50dp</dimen>
+
+
+    <!-- Brush sizes -->
+    <dimen name="small_brush">20dp</dimen>
+    <integer name="small_size">15</integer>
+    <dimen name="medium_brush">30dp</dimen>
+    <integer name="medium_size">20</integer>
+    <dimen name="large_brush">50dp</dimen>
+    <integer name="large_size">25</integer>
+
+    <dimen name="dp100">150dp</dimen>
+
+    <dimen name="margin_3">5dp</dimen>
+    <dimen name="margin_5">6dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_13">18dp</dimen>
+    <dimen name="margin_15">20dp</dimen>
+    <dimen name="margin_20">25dp</dimen>
+    <dimen name="margin_25">30dp</dimen>
+    <dimen name="margin_30">35dp</dimen>
+    <dimen name="margin_40">45dp</dimen>
+    <dimen name="margin_50">55dp</dimen>
+
+    <dimen name="text_title_size">25sp</dimen>
+    <dimen name="text_size">19sp</dimen>
+    <dimen name="text_spinner_size">17sp</dimen>
+
+    <!--Audio -->
+    <dimen name="aar_wave_height">80dp</dimen>
+    <dimen name="aar_bubble_size">50dp</dimen>
+    <dimen name="aar_footer_height">300dp</dimen>
+</resources>

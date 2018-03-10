@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGray"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout1"
+        layout="@layout/header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:id="@+id/sv1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout1"
+        android:paddingBottom="100dp">
+
+        <RelativeLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/sv1"
+            android:layout_margin="@dimen/margin_10"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorWhite"
+                android:orientation="vertical"
+                android:paddingBottom="10dp">
+
+                <com.rogi.View.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Have a Promo Code?"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/btnFontSize"
+                    app:customFont="@string/font_regular" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp">
+
+                    <EditText
+                        android:id="@+id/promoCodeEdt"
+                        style="@style/EditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/margin_5"
+                        android:hint="Enter Code Here"
+                        android:inputType="textCapSentences" />
+
+                    <com.rogi.View.TextViewPlus
+                        android:id="@+id/applyPromoCodeText"
+                        style="@style/BtnStyle"
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="right|center_horizontal|center_vertical"
+                        android:gravity="center"
+                        android:text="Apply"
+                        app:customFont="@string/font_regular" />
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/errorLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/removeErrorView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@mipmap/close_icon"
+                        android:backgroundTint="@color/highPriorityColor" />
+
+                    <com.rogi.View.TextViewPlus
+                        android:id="@+id/validText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Invalid Promocode"
+                        android:textColor="@color/highPriorityColor"
+                        android:textSize="@dimen/FontSize15"
+                        android:visibility="visible"
+                        app:customFont="@string/font_regular" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--Second Item...-->
+
+            <LinearLayout
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view1"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorWhite"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp">
+
+
+                <com.rogi.View.TextViewPlus
+                    android:id="@+id/txtPlanTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Selected Plan"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/btnFontSize"
+                    app:customFont="@string/font_regular" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <com.rogi.View.TextViewPlus
+                        android:id="@+id/planNameText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="0.8"
+                        android:textColor="@color/edthintTextColor"
+                        android:textSize="@dimen/btnFontSize"
+                        app:customFont="@string/font_regular" />
+
+                    <com.rogi.View.TextViewPlus
+                        android:id="@+id/advancePlanPrice"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="0.2"
+                        android:gravity="left"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/btnFontSize"
+                        app:customFont="@string/font_regular" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <com.rogi.View.TextViewPlus
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="0.8"
+                        android:text="Discount"
+                        android:textColor="@color/edthintTextColor"
+                        android:textSize="@dimen/btnFontSize"
+                        app:customFont="@string/font_regular" />
+
+                    <com.rogi.View.TextViewPlus
+                        android:id="@+id/discountPrice"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="0.2"
+                        android:gravity="left"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/btnFontSize"
+                        app:customFont="@string/font_regular" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/radioButtion_grey" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <com.rogi.View.TextViewPlus
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="0.8"
+                        android:text="Monthly Cost"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/btnFontSize"
+                        app:customFont="@string/font_regular" />
+
+                    <com.rogi.View.TextViewPlus
+                        android:id="@+id/newPrice"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="0.2"
+                        android:gravity="left"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/btnFontSize"
+                        app:customFont="@string/font_regular" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.rogi.View.TextViewPlus
+        android:id="@+id/payNowBtn"
+        style="@style/BtnStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_10"
+        android:gravity="center"
+        android:text="Pay Now"
+        app:customFont="@string/font_regular" />
+
+
+</RelativeLayout>

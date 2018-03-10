@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_5"
+    android:background="@drawable/background_shadow"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/margin_5"
+    android:paddingLeft="@dimen/margin_5"
+    android:paddingTop="@dimen/margin_5">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.rogi.View.TextViewPlus
+            style="@style/fontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Project Title"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/xxFontSize"
+            app:customFont="@string/font_regular" />
+
+        <Button
+            android:id="@+id/priorityBTN"
+            style="@style/BtnStyle"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorGreen"
+            android:text="Normal"
+            android:textSize="@dimen/xxFontSize" />
+
+
+    </RelativeLayout>
+
+    <com.rogi.View.TextViewPlus
+        android:id="@+id/taskTitleText"
+        style="@style/fontStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:text="Lorem Ipsum is simply Dummy"
+        android:textColor="@color/text2Color"
+        android:textSize="@dimen/normalFontSize"
+        app:customFont="@string/font_regular" />
+
+    <com.rogi.View.TextViewPlus
+        style="@style/fontStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:text="Description"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/xxFontSize"
+        app:customFont="@string/font_regular" />
+
+
+    <com.rogi.View.TextViewPlus
+        android:id="@+id/taskDescriptionText"
+        style="@style/fontStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/dummyText"
+        android:textColor="@color/text2Color"
+        android:textSize="@dimen/xxxFontSize"
+        app:customFont="@string/font_regular" />
+
+
+</LinearLayout>

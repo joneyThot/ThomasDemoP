@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_5"
+    android:layout_marginTop="@dimen/margin_5"
+    android:background="@drawable/background_shadow"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_5">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/titleLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.rogi.View.TextViewPlus
+                    android:id="@+id/headerText"
+                    style="@style/fontStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:text="Media &amp; Documents (press and hold to select images for report)"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/xxFontSize"
+                    app:customFont="@string/font_regular" />
+
+                <ImageView
+                    android:id="@+id/addItemView"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:src="@mipmap/cam_icon" />
+            </RelativeLayout>
+
+            <com.rogi.View.TextViewPlus
+                android:id="@+id/subHeaderText"
+                style="@style/fontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="5dp"
+                android:layout_marginTop="-5dp"
+                android:text="Click image to edit photos or view document"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/xxFontSize"
+                app:customFont="@string/font_regular" />
+
+            <com.rogi.View.TextViewPlus
+                android:id="@+id/txtNoMedia"
+                style="@style/fontStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/margin_5"
+                android:text="No media available"
+                android:textColor="@color/txtColor"
+                android:textSize="@dimen/xxxxfontSize"
+                app:customFont="@string/font_regular" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mediaRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/background_shadow"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_5"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/linCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/margin_5">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/camera_icon" />
+
+                <com.rogi.View.TextViewPlus
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:text="Camera"
+                    app:customFont="@string/font_regular" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linGallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:gravity="center"
+                android:padding="@dimen/margin_5">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/camera_icon" />
+
+                <com.rogi.View.TextViewPlus
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:text="Gallery "
+                    app:customFont="@string/font_regular" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGray">
+
+    <include
+        android:id="@+id/layout1"
+        layout="@layout/header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/linQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout1"
+        android:layout_margin="@dimen/margin_5"
+        android:background="@drawable/background_shadow"
+        android:orientation="vertical">
+
+        <com.rogi.View.TextViewPlus
+            android:id="@+id/txtQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_10"
+            android:singleLine="true"
+            android:text="Lorem Ipsum is simply Dummy"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/FontSize15"
+            app:customFont="@string/font_regular" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linQuestion">
+
+        <LinearLayout
+            android:id="@+id/linAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_5"
+            android:background="@drawable/background_shadow"
+            android:orientation="vertical">
+
+            <com.rogi.View.TextViewPlus
+                android:id="@+id/txtAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_10"
+                android:text="Lorem Ipsum is simply Dummy\nLorem Ipsum is simply Dummy\nLorem Ipsum is simply Dummy\nLorem Ipsum is simply Dummy"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/normalFontSize"
+                app:customFont="@string/font_regular" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGray"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout1"
+        layout="@layout/header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_shadow"
+                android:orientation="vertical"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:theme="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/edtTaskTitle"
+                        style="@style/EditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:hint="Project title"
+                        android:inputType="textCapSentences" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:theme="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/edtTaskDescription"
+                        style="@style/EditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:hint="Description"
+                        android:inputType="textCapSentences" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <android.support.design.widget.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:theme="@style/TextLabel">
+
+                        <EditText
+                            android:id="@+id/edtTaskStartDate"
+                            style="@style/EditTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:drawableRight="@mipmap/calendar_icon"
+                            android:focusable="false"
+                            android:hint="Start Date" />
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:theme="@style/TextLabel">
+
+                        <EditText
+                            android:id="@+id/edtTaskStartTime"
+                            style="@style/EditTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:drawableRight="@mipmap/time"
+                            android:focusable="false"
+                            android:hint="Start Time" />
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <android.support.design.widget.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:theme="@style/TextLabel">
+
+                        <EditText
+                            android:id="@+id/edtTaskDueDate"
+                            style="@style/EditTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:drawableRight="@mipmap/calendar_icon"
+                            android:focusable="false"
+                            android:hint="Due Date" />
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:theme="@style/TextLabel">
+
+                        <EditText
+                            android:id="@+id/edtTaskDueTime"
+                            style="@style/EditTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:drawableRight="@mipmap/time"
+                            android:focusable="false"
+                            android:hint="Due Time" />
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_shadow"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <com.rogi.View.TextViewPlus
+                    style="@style/fontStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:padding="@dimen/margin_10"
+                    android:text="Priority:"
+                    android:textColor="@color/edthintTextColor"
+                    android:textSize="@dimen/normalFontSize"
+                    app:customFont="@string/font_regular" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/linNormal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/margin_10">
+
+                        <ImageView
+                            android:id="@+id/imgNormal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="5dp"
+                            android:background="@mipmap/radio_btn_red" />
+
+                        <com.rogi.View.TextViewPlus
+                            style="@style/fontStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/add_porject_normal"
+                            android:textColor="@color/edthintTextColor"
+                            android:textSize="@dimen/normalFontSize"
+                            app:customFont="@string/font_regular" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/linHigh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_20"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/margin_10">
+
+                        <ImageView
+                            android:id="@+id/imgHigh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="5dp"
+                            android:background="@mipmap/radio_btn_red" />
+
+                        <com.rogi.View.TextViewPlus
+                            style="@style/fontStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/add_porject_high"
+                            android:textColor="@color/edthintTextColor"
+                            android:textSize="@dimen/normalFontSize"
+                            app:customFont="@string/font_regular" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--<RadioGroup
+                    android:id="@+id/radios"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:inputType="text"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/first"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:drawableLeft="@android:drawable/btn_radio"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="Normal"
+                        android:textSize="17dip" />
+
+                    <RadioButton
+                        android:id="@+id/second"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:button="@null"
+                        android:drawableLeft="@android:drawable/btn_radio"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="High"
+                        android:textSize="17dp" />
+                </RadioGroup>-->
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@drawable/background_shadow"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/margin_5"
+                android:paddingRight="@dimen/margin_5">
+
+                <android.support.design.widget.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:theme="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/edtTaskStreet"
+                        style="@style/EditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:hint="Street"
+                        android:inputType="textCapSentences" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <android.support.design.widget.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:theme="@style/TextLabel">
+
+                        <EditText
+                            android:id="@+id/edtTaskCity"
+                            style="@style/EditTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:hint="City"
+                            android:inputType="textCapSentences" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:theme="@style/TextLabel">
+
+                        <EditText
+                            android:id="@+id/edtTaskState"
+                            style="@style/EditTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:hint="State/Region"
+                            android:imeActionLabel="Country"
+                            android:inputType="textCapSentences" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <android.support.design.widget.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:theme="@style/TextLabel">
+
+                        <EditText
+                            android:id="@+id/edtTaskCountry"
+                            style="@style/EditTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:hint="Country"
+                            android:inputType="textCapSentences" />
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:theme="@style/TextLabel">
+
+                        <EditText
+                            android:id="@+id/edtTaskZipCode"
+                            style="@style/EditTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:hint="Zip Code"
+                            android:inputType="number"
+                            android:maxLength="6" />
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linReminderTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_shadow"
+                android:gravity="center|left"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/margin_5"
+                android:paddingRight="@dimen/margin_5">
+
+                <com.rogi.View.TextViewPlus
+                    style="@style/fontStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/margin_5"
+                    android:paddingTop="@dimen/margin_10"
+                    android:text="Set Reminder (up to 24 hours) prior to project deadline date"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/normalFontSize"
+                    app:customFont="@string/font_regular" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:theme="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/edtReminderTime"
+                        style="@style/EditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:focusable="false"
+                        android:hint="Select Hours" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <com.rogi.View.TextViewPlus
+                android:id="@+id/createTaskBTN"
+                style="@style/BtnStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Create Project"
+                app:customFont="@string/font_regular" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

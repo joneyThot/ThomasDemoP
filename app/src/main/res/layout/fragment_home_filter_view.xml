@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.rogi.View.TextViewPlus
+            style="@style/fontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:padding="5dp"
+            android:text="Sort by Priority"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/xxFontSize"
+            app:customFont="@string/font_regular" />
+
+        <ImageView
+            android:id="@+id/imgClose"
+            android:layout_width="@dimen/image_close"
+            android:layout_height="@dimen/image_close"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/margin_10"
+            android:src="@mipmap/clos_popup_icon" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linLH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_5"
+        android:gravity="center|left"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgLH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:background="@mipmap/radio_btn_green" />
+
+        <com.rogi.View.TextViewPlus
+            style="@style/fontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/normal_to_high"
+            android:textColor="@color/txtColor"
+            android:textSize="@dimen/normalFontSize"
+            app:customFont="@string/font_regular" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linHL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_5"
+        android:gravity="center|left"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgHL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:background="@mipmap/radio_btn_green" />
+
+        <com.rogi.View.TextViewPlus
+            style="@style/fontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/high_to_normal"
+            android:textColor="@color/txtColor"
+            android:textSize="@dimen/normalFontSize"
+            app:customFont="@string/font_regular" />
+
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radios"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:inputType="text"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableLeft="@android:drawable/btn_radio"
+            android:gravity="center_vertical"
+            android:text="Low to High"
+            android:textSize="17dip" />
+
+        <RadioButton
+            android:id="@+id/second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableLeft="@android:drawable/btn_radio"
+            android:gravity="center_vertical"
+            android:text="High to Low"
+            android:textSize="17dp" />
+    </RadioGroup>
+
+
+    <com.rogi.View.TextViewPlus
+        style="@style/fontStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_5"
+        android:padding="5dp"
+        android:text="Sort by Date"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/xxFontSize"
+        app:customFont="@string/font_regular" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:theme="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/fromDate"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@mipmap/calendar_icon"
+                android:focusable="false"
+                android:hint="From" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:theme="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/toDate"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@mipmap/calendar_icon"
+                android:focusable="false"
+                android:hint="to" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <com.rogi.View.TextViewPlus
+            android:id="@+id/btnFilter"
+            style="@style/BtnStyle"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="Filter"
+            android:textSize="@dimen/xxxxfontSize"
+            app:customFont="@string/font_regular" />
+
+
+        <com.rogi.View.TextViewPlus
+            android:id="@+id/btnReset"
+            style="@style/BtnStyleWhite"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="Reset"
+            app:customFont="@string/font_regular" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

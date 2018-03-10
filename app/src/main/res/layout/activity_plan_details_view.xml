@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout1"
+        layout="@layout/header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/getPlanBtn"
+        android:layout_below="@+id/layout1"
+        android:background="@color/colorPrimary">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <Button
+        android:id="@+id/getPlanBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite"
+        android:text="START NOW"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/FontSize15" />
+
+</RelativeLayout>

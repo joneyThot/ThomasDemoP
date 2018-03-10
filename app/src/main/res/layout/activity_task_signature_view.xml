@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgClose"
+        android:layout_width="@dimen/image_close"
+        android:layout_height="@dimen/image_close"
+        android:layout_gravity="right"
+        android:padding="@dimen/margin_10"
+        android:src="@mipmap/clos_popup_icon" />
+
+
+    <com.rogi.View.TextViewPlus
+        style="@style/fontStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="5dp"
+        android:text="@string/signature_text1"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="-10dp"
+        android:textSize="@dimen/xxFontSize"
+        app:customFont="@string/font_regular" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal">
+
+        <com.simplify.ink.InkView
+            android:id="@+id/ink"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            app:inkFlags="interpolation|responsiveWeight" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <com.rogi.View.TextViewPlus
+            android:id="@+id/submitSignatureBTN"
+            style="@style/BtnStyle"
+            android:layout_width="@dimen/btn_add_size"
+            android:layout_height="@dimen/btn_cancel_size"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="Submit"
+            android:textSize="@dimen/xxxxfontSize"
+            app:customFont="@string/font_regular" />
+
+
+        <com.rogi.View.TextViewPlus
+            android:id="@+id/resetSignatureBTN"
+            style="@style/BtnStyleWhite"
+            android:layout_width="@dimen/btn_add_size"
+            android:layout_height="@dimen/btn_cancel_size"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="Reset"
+            app:customFont="@string/font_regular" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

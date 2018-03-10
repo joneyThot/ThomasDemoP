@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_5"
+    android:layout_marginTop="@dimen/margin_5"
+    android:background="@drawable/background_shadow"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/margin_5"
+    android:paddingLeft="@dimen/margin_5"
+    android:paddingTop="@dimen/margin_5"
+    android:weightSum="2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.rogi.View.TextViewPlus
+                style="@style/fontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Start Date"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/xxFontSize"
+                app:customFont="@string/font_regular" />
+
+            <com.rogi.View.TextViewPlus
+                android:id="@+id/startDateText"
+                style="@style/fontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@mipmap/calendar_icon"
+                android:drawablePadding="3dp"
+                android:padding="5dp"
+                android:text="Jun 08 2017"
+                android:textColor="@color/text2Color"
+                android:textSize="@dimen/xxxFontSize"
+                app:customFont="@string/font_regular" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <com.rogi.View.TextViewPlus
+                style="@style/fontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Due Date"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/xxFontSize"
+                app:customFont="@string/font_regular" />
+
+            <com.rogi.View.TextViewPlus
+                android:id="@+id/dueDateText"
+                style="@style/fontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@mipmap/calendar_icon"
+                android:drawablePadding="3dp"
+                android:padding="5dp"
+                android:text="Jun 08 2017"
+                android:textColor="@color/text2Color"
+                android:textSize="@dimen/xxxFontSize"
+                app:customFont="@string/font_regular" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.rogi.View.TextViewPlus
+                    style="@style/fontStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Start Time"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/xxFontSize"
+                    app:customFont="@string/font_regular" />
+
+                <com.rogi.View.TextViewPlus
+                    android:id="@+id/startTimeText"
+                    style="@style/fontStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/priorityBTN"
+                    android:drawableLeft="@mipmap/time"
+                    android:drawablePadding="3dp"
+                    android:padding="5dp"
+                    android:text="11:30AM"
+                    android:textColor="@color/text2Color"
+                    android:textSize="@dimen/xxxFontSize"
+                    app:customFont="@string/font_regular" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <com.rogi.View.TextViewPlus
+                    style="@style/fontStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Due Time"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/xxFontSize"
+                    app:customFont="@string/font_regular" />
+
+                <com.rogi.View.TextViewPlus
+                    android:id="@+id/dueTimeText"
+                    style="@style/fontStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/priorityBTN"
+                    android:drawableLeft="@mipmap/time"
+                    android:drawablePadding="3dp"
+                    android:padding="5dp"
+                    android:text="07:30PM"
+                    android:textColor="@color/text2Color"
+                    android:textSize="@dimen/xxxFontSize"
+                    app:customFont="@string/font_regular" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgEditDueDate"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="top|right"
+            android:layout_marginRight="@dimen/margin_5"
+            android:padding="@dimen/margin_5"
+            android:src="@mipmap/edit_img" />
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_10"
+    android:background="@drawable/background_shadow"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_5">
+
+    <com.rogi.View.TextViewPlus
+        android:id="@+id/txtRogiUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Login to myrogi.com for add’l project changes and edits"
+        android:textColorLink="@color/urlColor"
+        android:textSize="@dimen/xxxxfontSize"
+        android:textColor="@color/text2Color"
+        app:customFont="@string/font_regular" />
+
+
+</LinearLayout>

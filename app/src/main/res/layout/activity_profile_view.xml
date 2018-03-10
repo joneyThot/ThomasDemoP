@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txtInputCompanyName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:theme="@style/TextLabel">
+
+        <EditText
+            android:id="@+id/companyNameEditText"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@mipmap/user"
+            android:drawablePadding="@dimen/margin_5"
+            android:enabled="false"
+            android:hint="Company Name"
+            android:inputType="textCapSentences"
+            android:text="" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:theme="@style/TextLabel">
+
+        <EditText
+            android:id="@+id/firstNameEditText"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@mipmap/user"
+            android:drawablePadding="@dimen/margin_5"
+            android:enabled="false"
+            android:hint="First Name"
+            android:inputType="textCapSentences"
+            android:text="" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:theme="@style/TextLabel">
+
+        <EditText
+            android:id="@+id/lastNameEditText"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@mipmap/user"
+            android:drawablePadding="@dimen/margin_5"
+            android:enabled="false"
+            android:hint="Last Name"
+            android:inputType="textCapSentences"
+            android:text="" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:theme="@style/TextLabel">
+
+        <EditText
+            android:id="@+id/edtStreet"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@mipmap/icon_city"
+            android:drawablePadding="@dimen/margin_5"
+            android:enabled="false"
+            android:hint="Street"
+            android:inputType="textCapSentences" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:theme="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/edtCity"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@mipmap/icon_city"
+                android:drawablePadding="@dimen/margin_5"
+                android:enabled="false"
+                android:hint="City"
+                android:inputType="textCapSentences" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:theme="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/edtState"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@mipmap/icon_city"
+                android:drawablePadding="@dimen/margin_5"
+                android:enabled="false"
+                android:hint="State/Region"
+                android:imeActionLabel="Country"
+                android:inputType="textCapSentences" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:theme="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/edtCountry"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@mipmap/icon_city"
+                android:drawablePadding="@dimen/margin_5"
+                android:enabled="false"
+                android:hint="Country"
+                android:inputType="textCapSentences" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:theme="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/edtZipCode"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@mipmap/icon_city"
+                android:drawablePadding="@dimen/margin_5"
+                android:enabled="false"
+                android:hint="Zip Code"
+                android:inputType="number"
+                android:maxLength="6" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:theme="@style/TextLabel">
+
+        <EditText
+            android:id="@+id/emailEditText"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@mipmap/email_icon"
+            android:drawablePadding="@dimen/margin_5"
+            android:enabled="false"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:text="" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:theme="@style/TextLabel">
+
+        <EditText
+            android:id="@+id/phoneEditText"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@mipmap/call_icon"
+            android:drawablePadding="@dimen/margin_5"
+            android:enabled="false"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:text="" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <FrameLayout
+        android:id="@+id/framePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:drawableLeft="@mipmap/lock"
+                android:drawablePadding="@dimen/margin_5"
+                android:enabled="false"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:text=""
+                android:visibility="gone" />
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/imgShowPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/margin_5"
+            android:layout_marginTop="@dimen/margin_15"
+            android:padding="@dimen/margin_10"
+            android:src="@mipmap/eye" />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frameCPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/confirmPasswordEditText"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:drawableLeft="@mipmap/lock"
+                android:drawablePadding="@dimen/margin_5"
+                android:enabled="false"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:text=""
+                android:visibility="gone" />
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/imgShowCPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/margin_5"
+            android:layout_marginTop="@dimen/margin_15"
+            android:padding="@dimen/margin_10"
+            android:src="@mipmap/eye" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

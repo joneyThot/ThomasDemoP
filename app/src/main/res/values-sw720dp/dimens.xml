@@ -1,0 +1,55 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">30dp</dimen>
+    <dimen name="nav_header_height">220dp</dimen>
+    <dimen name="fab_margin">40dp</dimen>
+
+    <dimen name="progressBarWidth">7dp</dimen>
+
+
+    <!--TODO: Font size ::::-->
+    <dimen name="text_size_25">35dp</dimen>
+    <dimen name="titleFontSize">30.00dp</dimen>
+    <dimen name="btnFontSize">26.25dp</dimen>
+    <dimen name="FontSize15">25dp</dimen>
+    <dimen name="normalFontSize">23.75dp</dimen>
+    <dimen name="xxxxfontSize">22.50dp</dimen>
+    <dimen name="xxxFontSize">21.25dp</dimen>
+    <dimen name="xxFontSize">20.00dp</dimen>
+    <dimen name="xFontSize">19.00dp</dimen>
+    <dimen name="FontSize">17.50dp</dimen>
+
+
+    <!-- Brush sizes -->
+    <dimen name="small_brush">25dp</dimen>
+    <integer name="small_size">20</integer>
+    <dimen name="medium_brush">35dp</dimen>
+    <integer name="medium_size">25</integer>
+    <dimen name="large_brush">60dp</dimen>
+    <integer name="large_size">35</integer>
+
+    <dimen name="dp100">180dp</dimen>
+
+    <dimen name="margin_3">8dp</dimen>
+    <dimen name="margin_5">10dp</dimen>
+    <dimen name="margin_10">15dp</dimen>
+    <dimen name="margin_13">22dp</dimen>
+    <dimen name="margin_15">25dp</dimen>
+    <dimen name="margin_20">30dp</dimen>
+    <dimen name="margin_25">35dp</dimen>
+    <dimen name="margin_30">40dp</dimen>
+    <dimen name="margin_40">50dp</dimen>
+    <dimen name="margin_50">60dp</dimen>
+
+    <dimen name="text_title_size">30sp</dimen>
+    <dimen name="text_size">25sp</dimen>
+    <dimen name="text_spinner_size">20sp</dimen>
+
+    <!--Audio -->
+    <dimen name="aar_wave_height">100dp</dimen>
+    <dimen name="aar_bubble_size">50dp</dimen>
+    <dimen name="aar_footer_height">350dp</dimen>
+</resources>

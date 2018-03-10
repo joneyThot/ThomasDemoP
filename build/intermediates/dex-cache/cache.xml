@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/ctpl126/Documents/Project/rogi/app/libs/java-json.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="edad9c5de6fb8df07c535a47045956026011ffa3">
+        <dex dex="/home/ctpl126/Documents/Project/rogi/app/build/intermediates/pre-dexed/debug/java-json_5bac54322b8c755810da02346320724638b6d1dc.jar" />
+    </item>
+
+</items>

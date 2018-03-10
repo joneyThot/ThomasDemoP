@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:id="@+id/todayProjectLayout"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:background="@color/todayProjectColor"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp">
+
+            <com.rogi.View.TextViewPlus
+                android:id="@+id/todayTaskCountText"
+                style="@style/fontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_size_25"
+                app:customFont="@string/font_regular" />
+
+            <com.rogi.View.TextViewPlus
+                style="@style/fontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:text="Current \nProject(s)"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/xxFontSize"
+                app:customFont="@string/font_regular" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/completedProjectLayout"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@color/completeProjectColor"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp">
+
+            <com.rogi.View.TextViewPlus
+                android:id="@+id/completedTaskCountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_size_25"
+                app:customFont="@string/font_regular" />
+
+            <com.rogi.View.TextViewPlus
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:text="Finished \nProject(S)"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/xxFontSize"
+                app:customFont="@string/font_regular" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/penddingProjectLayout"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@color/pendingProjectColor"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp">
+
+            <com.rogi.View.TextViewPlus
+                android:id="@+id/penddingTaskCountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_size_25"
+                app:customFont="@string/font_regular" />
+
+            <com.rogi.View.TextViewPlus
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:text="Pending \nProject(S)"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/xxFontSize"
+                app:customFont="@string/font_regular" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

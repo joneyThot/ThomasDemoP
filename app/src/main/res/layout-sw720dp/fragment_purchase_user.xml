@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGray"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:id="@+id/sv1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLightGray">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_15"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_shadow"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_10">
+
+                <com.rogi.View.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:text="Number of sub level users in your account"
+                    android:textColor="@color/txtColor"
+                    android:textSize="@dimen/FontSize15"
+                    app:customFont="@string/font_regular" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@drawable/background_shadow"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="180dp"
+                        android:layout_margin="@dimen/margin_10"
+                        android:layout_weight="1"
+                        android:background="@color/linColor"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.rogi.View.TextViewPlus
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_10"
+                            android:text="Default"
+                            android:textColor="@color/txtColor"
+                            android:textSize="@dimen/titleFontSize"
+                            app:customFont="@string/font_regular" />
+
+                        <com.rogi.View.TextViewPlus
+                            android:id="@+id/txtDefaultUser"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_10"
+                            android:text="0"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size_25"
+                            app:customFont="@string/font_regular" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="180dp"
+                        android:layout_margin="@dimen/margin_10"
+                        android:layout_weight="1"
+                        android:background="@color/linColor"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.rogi.View.TextViewPlus
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_10"
+                            android:text="Paid"
+                            android:textColor="@color/txtColor"
+                            android:textSize="@dimen/titleFontSize"
+                            app:customFont="@string/font_regular" />
+
+                        <com.rogi.View.TextViewPlus
+                            android:id="@+id/txtPaidUser"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_10"
+                            android:text="0"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size_25"
+                            app:customFont="@string/font_regular" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@drawable/background_shadow"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.rogi.View.TextViewPlus
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:layout_weight="0.8"
+                        android:text="Enter Number of sub level users"
+                        android:textColor="@color/txtColor"
+                        android:textSize="@dimen/btnFontSize"
+                        app:customFont="@string/font_regular" />
+
+                    <EditText
+                        android:id="@+id/edtSubUserNo"
+                        style="@style/EditTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:layout_weight="0.2"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:textSize="@dimen/btnFontSize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:orientation="horizontal">
+
+                    <com.rogi.View.TextViewPlus
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:layout_weight="0.8"
+                        android:text="Amount per new user"
+                        android:textColor="@color/txtColor"
+                        android:textSize="@dimen/btnFontSize"
+                        app:customFont="@string/font_regular" />
+
+                    <com.rogi.View.TextViewPlus
+                        android:id="@+id/txtAmountPerUser"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:layout_weight="0.2"
+                        android:gravity="center"
+                        android:text="$ 0"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/btnFontSize"
+                        app:customFont="@string/font_regular" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_30"
+                    android:layout_marginTop="@dimen/margin_30"
+                    android:orientation="horizontal">
+
+                    <com.rogi.View.TextViewPlus
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:layout_weight="0.8"
+                        android:text="Total amount to pay"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/btnFontSize"
+                        app:customFont="@string/font_regular" />
+
+                    <com.rogi.View.TextViewPlus
+                        android:id="@+id/txtTotalAmount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:layout_weight="0.2"
+                        android:gravity="center"
+                        android:text="$ 0"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/btnFontSize"
+                        app:customFont="@string/font_regular" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.rogi.View.TextViewPlus
+                android:id="@+id/btnPayNow"
+                style="@style/BtnStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_30"
+                android:gravity="center"
+                android:text="Pay Now"
+                app:customFont="@string/font_regular" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

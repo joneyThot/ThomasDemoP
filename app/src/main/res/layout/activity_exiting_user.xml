@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linMainMyProfile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGray"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout1"
+        layout="@layout/header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_weight="5.5"
+            android:background="@drawable/background_shadow"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_10">
+
+            <ListView
+                android:id="@+id/lisExitingUser"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/edthintTextColor"
+                android:dividerHeight="1dp"
+                android:scrollbars="none" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_weight="3.5"
+            android:background="@drawable/background_shadow"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_5">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_5"
+                android:weightSum="1">
+
+                <com.rogi.View.TextViewPlus
+                    android:id="@+id/planNameText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:text="No. of Users"
+                    android:textColor="@color/edthintTextColor"
+                    android:textSize="@dimen/btnFontSize"
+                    app:customFont="@string/font_regular" />
+
+                <com.rogi.View.TextViewPlus
+                    android:id="@+id/txtNumberOfUser"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:gravity="right"
+                    android:text="0"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/btnFontSize"
+                    app:customFont="@string/font_regular" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_5"
+                android:weightSum="1">
+
+                <com.rogi.View.TextViewPlus
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:text="Price per User"
+                    android:textColor="@color/edthintTextColor"
+                    android:textSize="@dimen/btnFontSize"
+                    app:customFont="@string/font_regular" />
+
+                <com.rogi.View.TextViewPlus
+                    android:id="@+id/txtperUserPrice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/btnFontSize"
+                    app:customFont="@string/font_regular" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_5"
+                android:weightSum="1">
+
+                <com.rogi.View.TextViewPlus
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:text="Plan Price"
+                    android:textColor="@color/edthintTextColor"
+                    android:textSize="@dimen/btnFontSize"
+                    app:customFont="@string/font_regular" />
+
+                <com.rogi.View.TextViewPlus
+                    android:id="@+id/txtPlanPrice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/btnFontSize"
+                    app:customFont="@string/font_regular" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_5"
+                android:weightSum="1">
+
+                <com.rogi.View.TextViewPlus
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:text="Monthly Cost"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/btnFontSize"
+                    app:customFont="@string/font_regular" />
+
+                <com.rogi.View.TextViewPlus
+                    android:id="@+id/txtNewPrice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/btnFontSize"
+                    app:customFont="@string/font_regular" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.rogi.View.TextViewPlus
+            android:id="@+id/payNowBtn"
+            style="@style/BtnStyle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Pay Now"
+            app:customFont="@string/font_regular" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

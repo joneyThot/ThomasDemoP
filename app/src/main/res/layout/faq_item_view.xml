@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linRaw"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_10"
+    android:background="@drawable/background_shadow"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_5">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.rogi.View.TextViewPlus
+            android:id="@+id/txtQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imgNext"
+            android:padding="@dimen/margin_10"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/FontSize15"
+            app:customFont="@string/font_regular" />
+
+        <ImageView
+            android:id="@+id/imgNext"
+            android:layout_width="@dimen/margin_30"
+            android:layout_height="@dimen/margin_30"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/icon_next" />
+    </RelativeLayout>
+
+</LinearLayout>

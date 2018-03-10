@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <com.rogi.View.TextViewPlus
+            android:id="@+id/txtdollersign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="$"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/margin_30" />
+
+        <com.rogi.View.TextViewPlus
+            android:id="@+id/planAmountTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txtdollersign"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/margin_50" />
+
+        <com.rogi.View.TextViewPlus
+            android:id="@+id/durationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtdollersign"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/xxxxfontSize" />
+
+        <com.rogi.View.TextViewPlus
+            android:id="@+id/descriptionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/durationText"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/FontSize15" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorWhite" />
+
+</LinearLayout>

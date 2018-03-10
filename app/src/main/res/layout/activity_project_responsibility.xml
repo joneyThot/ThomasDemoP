@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGray">
+
+    <include
+        android:id="@+id/layout1"
+        layout="@layout/header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/linDefault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/profile_logo" />
+
+        <com.rogi.View.TextViewPlus
+            android:id="@+id/txtError"
+            style="@style/fontStyle"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="@string/no_project_resposibility"
+            android:textColor="@color/text2Color"
+            android:textSize="@dimen/titleFontSize"
+            app:customFont="@string/font_regular" />
+
+        <com.rogi.View.TextViewPlus
+            android:id="@+id/txtMsg"
+            style="@style/fontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="@string/no_project_msg_resposibility"
+            android:textColor="@color/edthintTextColor"
+            android:textSize="@dimen/xxxxfontSize"
+            app:customFont="@string/font_regular" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linMiddle"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/linBottom"
+        android:layout_below="@+id/layout1"
+        android:padding="@dimen/margin_10">
+
+        <ListView
+            android:id="@+id/lisProject"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="1dp"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_10"
+        android:orientation="horizontal">
+
+        <com.rogi.View.TextViewPlus
+            android:id="@+id/btnAdd"
+            style="@style/BtnStyle"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/additional_add"
+            android:textSize="@dimen/btnFontSize"
+            app:customFont="@string/font_regular" />
+
+        <com.rogi.View.TextViewPlus
+            android:id="@+id/btnCancel"
+            style="@style/BtnStyleWhite"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/additional_cancel"
+            android:textSize="@dimen/btnFontSize"
+            app:customFont="@string/font_regular" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

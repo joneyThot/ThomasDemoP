@@ -1,0 +1,210 @@
+<resources>
+    <string name="app_name">ROGi</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawerActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="font_regular">OpenSans-Regular.ttf</string>
+    <!-- Jackey Account -->
+    <!--<string name="map_api_key">AIzaSyCZ_3di7d-symhEmebMQPyxH1IwPUuzjlg</string>-->
+
+    <!--Sunil Account -->
+    <string name="map_api_key">AIzaSyCLdzTtJsAnCIU75yQH4MhDWnwAAassVPI</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_home">Home</string>
+    <string name="nav_report">Report</string>
+    <string name="nav_faq">FAQs</string>
+    <string name="nav_about">About</string>
+    <string name="nav_history">History</string>
+    <string name="nav_technical_support">Technical Support</string>
+    <string name="nav_video_guide">Video Guide</string>
+    <string name="nav_sales_force">Salesforce</string>
+    <string name="nav_purchase_user">Purchase User</string>
+    <string name="nav_our_plan">Our Plan</string>
+    <string name="nav_privacy_policy">Privacy Policy</string>
+    <string name="nav_terms_and_condition">Terms And Conditions</string>
+    <string name="nav_logout">Logout</string>
+    <string name="readMore"><u>Read More...</u></string>
+
+    <!-- COMMON -->
+    <string name="loading">Loading...</string>
+    <string name="please_wait">Please Wait...</string>
+    <string name="try_again">Try again!</string>
+    <string name="connection">Internet connection is not available.</string>
+    <string name="alert">ROGi</string>
+    <string name="dummy_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+    <string name="otp_msg">You will get OTP shortly...</string>
+    <string name="checkInternet">Please check your internet connection!</string>
+
+    <!--Login-->
+    <string name="enter_username">Please Enter Username.</string>
+    <string name="enter_password">Please Enter Password.</string>
+
+    <!-- Register -->
+    <string name="enter_company_name">Please Enter Company Name.</string>
+    <string name="enter_firstname">Please Enter Firstname.</string>
+    <string name="enter_lastname">Please Enter Lastname.</string>
+    <string name="enter_emailaddress">Please Enter Email Address.</string>
+    <string name="invalid_email">Please Enter Valid Email Address.</string>
+    <string name="enter_phonenumber">Please Enter Phone Number.</string>
+    <string name="enter_phonenumber_length">Phone Number Must be at least 10 Digits.</string>
+    <string name="enter_confirampassword">Please Enter Confirm Password.</string>
+    <string name="enter_image">Please Select Image.</string>
+    <string name="check_password_length">Password Length Must Be 8 Characters.</string>
+    <string name="password_not_match">Password Does Not Match.</string>
+    <string name="enter_comment">Please Enter Your Comment.</string>
+
+    <!--ADD Project -->
+    <string name="enter_project_title">Please Enter Project Title.</string>
+    <string name="enter_project_description">Please Enter Project Description.</string>
+    <string name="select_start_date">Please Select Start Date.</string>
+    <string name="select_due_date">Please Select Due Date.</string>
+    <string name="select_start_time">Please Select Start Time.</string>
+    <string name="select_due_time">Please Select Due Time.</string>
+    <string name="select_priority">Please Select Priority.</string>
+    <string name="select_status">Please Select Status.</string>
+    <string name="enter_project_street">Please Enter Street.</string>
+    <string name="enter_project_city">Please Enter City.</string>
+    <string name="enter_project_state">Please Enter State/Region.</string>
+    <string name="enter_project_country">Please Enter Country.</string>
+    <string name="enter_project_zipcode">Please Enter Zip Code.</string>
+    <string name="zipcode_length">Zipcode Length Minimum 3 Digits.</string>
+    <string name="before_date">Please Select Start Date Before To Due Date.</string>
+    <string name="after_date">Please Select Due Date After From Start Date.</string>
+    <string name="start_date">Start Date Should Not Be Blank.</string>
+    <string name="due_time">Start Time Should Not Be Blank.</string>
+    <string name="same_time">Start Time And Due Time Should Not Be Same.</string>
+
+    <!-- Project Details -->
+    <string name="enter_notes">Please Enter Note.</string>
+    <string name="enter_project">Please Enter Project Phase.</string>
+
+    <!--Crop library-->
+    <string name="crop_image_activity_title"></string>
+    <string name="pick_image_intent_chooser_title">Select source</string>
+
+
+    <string name="dummyText">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</string>
+    <string name="shortDummyText">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+    <string name="signature_text1"><b>Warning:</b>\n\nOnce you submit your signature, this cannot be undone. This project is final and no further edits or additions can be made to it in the app or online.</string>
+    <string name="signature_text2">This can not be undone.</string>
+
+    <!-- Filter -->
+    <string name="normal_to_high">Normal to High</string>
+    <string name="high_to_normal">High to Normal</string>
+    <string name="pending">Pending</string>
+    <string name="completed">Completed</string>
+    <string name="finished">Finished</string>
+
+    <!--Painting on Image String-->
+    <string name="start_new">New</string>
+    <string name="brush">Brush</string>
+    <string name="erase">Erase</string>
+    <string name="opacity">Opacity</string>
+    <string name="save">Save</string>
+    <string name="paint">Paint</string>
+    <string name="sml">Small</string>
+    <string name="med">Medium</string>
+    <string name="lrg">Large</string>
+
+    <!--Histroy -->
+    <string name="histroy_clear_filter">Clear Filters</string>
+    <string name="no_pending_projects">No pending projects</string>
+    <string name="no_completed_projects">No completed projects</string>
+    <string name="no_histroy_projects">There are no \nproject in history</string>
+
+    <!-- Add Project -->
+    <string name="add_porject_normal">Normal</string>
+    <string name="add_porject_high">High</string>
+    <string name="no_project">There are no \nprojects planned</string>
+    <string name="no_project_resposibility">There are no \nprojects Responsibility</string>
+    <string name="no_project_msg">You can create a new project by pressing the \nplus button on the bottom right of the screen</string>
+    <string name="no_project_msg_resposibility">You can create new project Responsibility by pressing \nthe plus button on the top right of the screen</string>
+
+    <string name="upgrade_offline">It looks like you are offline! Please connect to the internet to Upgrade your plan.</string>
+    <string name="cancel_offline">It looks like you are offline! Please connect to the internet to Cancel your plan.</string>
+    <string name="purchase_user_offline">It looks like you are offline! Please connect to the internet to get sublevel user cost.</string>
+
+    <!--Additional Contacts-->
+    <string name="additional_title">Additional contacts</string>
+    <string name="additional_name">Name</string>
+    <string name="additional_company">Company</string>
+    <string name="additional_address">Address</string>
+    <string name="additional_city">City</string>
+    <string name="additional_state">State/Region</string>
+    <string name="additional_zipcode">Zip Code</string>
+    <string name="additional_phone_no">Phone Number</string>
+    <string name="additional_email">Email Address</string>
+    <string name="additional_project_responsibility">Project Responsibility</string>
+    <string name="additional_add_contacts">Add Contact</string>
+    <string name="additional_update_contacts">Update Contact</string>
+    <string name="additional_add">Add</string>
+    <string name="additional_cancel">Cancel</string>
+
+    <string name="additional_select_company_name">Please Select Company Name.</string>
+    <string name="additional_enter_address">Please Enter Address.</string>
+    <string name="additional_enter_phone_number">Please Enter Phone Number.</string>
+    <string name="additional_select_project_responsibility">Please Select Project Responsibility.</string>
+
+    <string name="additnal_name">Name:</string>
+    <string name="additnal_company">Company:</string>
+    <string name="additnal_address">Address:</string>
+    <string name="additnal_phone">Phone:</string>
+    <string name="additnal_email">Email:</string>
+    <string name="additnal_responsibility">Responsibility:</string>
+
+    <string name="invalid_card_number">Invalid Card Number</string>
+    <string name="invalid_month">Invalid Month</string>
+    <string name="two_digit_month">Two Digit Month Required</string>
+    <string name="invalid_year">Invalid Year</string>
+    <string name="invalid_cvv">Invalid CVV</string>
+    <string name="invalid_date">Invalid Date</string>
+    <string name="empty_all_field">Empty fields</string>
+    <string name="payment_process">Please wait, We are processing your transaction.</string>
+    <string name="unable_get_token">We are not able to proceed your transaction. Make sure that you have enter valid card details.</string>
+    <string name="failed_auth_api">Your Transaction is not Successful, Please try after some time.</string>
+    <string name="payment_api_falied">Your payment is successful but our server is unable to process your request to activate your account. Please contact support team.</string>
+    <string name="payment_success">Your Transaction is Successful.</string>
+
+    <!--Audio Activity-->
+    <string name="aar_save">Save</string>
+    <string name="aar_paused">Paused</string>
+    <string name="aar_recording">Recording</string>
+    <string name="aar_playing">Playing</string>
+
+    <!-- Sales Force Fragment -->
+    <string name="enter_consumer_key">Please Enter Consumer Key.</string>
+    <string name="enter_consumer_Secret_key">Please Enter Consumer Secret Key.</string>
+    <string name="enter_security_token">Please Enter Security Token.</string>
+    <string name="enter_user_name">Please Enter Email Address / User Name.</string>
+
+    <!--Technical Support-->
+    <string name="tech_error">Note: All support tickets and questions will be answered within the following business day.</string>
+    <string name="tech_subject">Subject</string>
+    <string name="tech_number">Phone Number</string>
+    <string name="tech_enter_subject">Please Enter Subject</string>
+
+    <string name="is_tablet">false</string>
+
+    <!-- File Piker -->
+    <string name="action_close">Close</string>
+    <string name="empty_directory_hint">Empty directory</string>
+    <string name="type_archive">Archive</string>
+    <string name="type_certificate">Certificate</string>
+    <string name="type_directory">Directory</string>
+    <string name="type_document">File</string>
+    <string name="type_drawing">Picture</string>
+    <string name="type_excel">Spreadsheet</string>
+    <string name="type_image">Image</string>
+    <string name="type_music">Music</string>
+    <string name="type_video">Video</string>
+    <string name="type_pdf">PDF document</string>
+    <string name="type_power_point">Presentation</string>
+    <string name="type_word">Document</string>
+    <string name="type_apk">APK</string>
+
+
+</resources>

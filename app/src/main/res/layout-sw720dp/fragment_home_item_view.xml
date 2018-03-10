@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linRaw"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:background="@drawable/background_shadow"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:paddingBottom="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="10dp">
+
+    <RelativeLayout
+        android:id="@+id/firstView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.rogi.View.TextViewPlus
+            android:id="@+id/priorityBTN"
+            style="@style/BtnStyle"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:background="@color/colorGreen"
+            android:gravity="center"
+            android:text="Normal"
+            android:textSize="@dimen/xFontSize"
+            app:customFont="@string/font_regular" />
+
+        <com.rogi.View.TextViewPlus
+            android:id="@+id/dateText"
+            style="@style/fontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/priorityBTN"
+            android:drawableLeft="@mipmap/calendar_icon"
+            android:drawablePadding="3dp"
+            android:text="Jun 08 2017 - Jun 22 2017"
+            android:textColor="@color/txtColor"
+            android:textSize="@dimen/xxxFontSize"
+            app:customFont="@string/font_regular" />
+
+        <com.rogi.View.TextViewPlus
+            android:id="@+id/timeText"
+            style="@style/fontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@mipmap/time"
+            android:drawablePadding="3dp"
+            android:gravity="right"
+            android:text="11:30AM"
+            android:textColor="@color/txtColor"
+            android:textSize="@dimen/xxxFontSize"
+            app:customFont="@string/font_regular" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/secondView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <com.rogi.View.TextViewPlus
+            android:id="@+id/detailText"
+            style="@style/fontStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/statusBTN"
+            android:singleLine="true"
+            android:text="Lorem Ipsum is simply Dummy"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/normalFontSize"
+            app:customFont="@string/font_regular" />
+
+        <com.rogi.View.TextViewPlus
+            android:id="@+id/statusBTN"
+            style="@style/BtnStyle"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:gravity="center"
+            android:text="Start"
+            android:textSize="@dimen/xxxxfontSize"
+            app:customFont="@string/font_regular" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

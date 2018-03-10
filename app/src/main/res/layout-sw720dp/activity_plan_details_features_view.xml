@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+
+    <com.rogi.View.TextViewPlus
+        android:id="@+id/planFeaturesText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Client CRM"
+        android:padding="8dp"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/FontSize15" />
+
+
+</LinearLayout>
